@@ -1,0 +1,29 @@
+.loading-modal {
+    background-color: aquamarine;
+    opacity: .5;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.loading-modal-content {
+    display: flex;
+    align-items: center;
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+    0% {
+      transform: skew(20deg, 20deg);
+    }
+    100% {
+      transform: skew(-20deg, -20deg);
+    }
+}
